@@ -1,0 +1,49 @@
+<p>create-employee works!</p>  
+<div class="form-group">
+    <label for="username">UserName:</label>
+    <input type="username" formControlName="UserName" placeholder="UserName"  name="UserName" class="form-control" [(ngModel)]="UserName">
+</div>
+<div class="clearfix"></div>
+<br>
+<div class="form-group">
+    <label for="password">Password:</label>
+    <input type="password" formControlName="Password" placeholder="password"  name="password" class="form-control" [(ngModel)]="password">
+</div>
+<div class="clearfix"></div>
+<br>
+<div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input type="text" formControlName="firstName" placeholder="First Name" name="firstName" class="form-control"  [(ngModel)]="firstName">
+    
+  </div>
+  <div class="clearfix"></div>
+  <br>
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" [(ngModel)]="lastName">
+  </div>
+
+  <div class="clearfix"></div>
+  <br>
+  <div class="form-group">
+    <label for="email">Email :</label>
+    <input type="email" formControlName="email" placeholder="Email"  name="email" class="form-control" [(ngModel)]="email" [email]="validateEmail">
+
+  </div>
+  <div class="clearfix"></div>
+<br>
+<div class="form-group">
+    <label for="Mobileno">MobileNumber :</label>
+    <input type="text" formControlName="Mobileno" placeholder="Mobileno"  name="Mobileno" class="form-control" [(ngModel)]="Mobileno">
+
+  </div>
+  <div class="clearfix"></div>
+<br>
+<div class="form-group">
+    <label for="Aadharno">AadharNumber :</label>
+    <input type="text" formControlName="Aadharno" placeholder="Aadharno"  name="Aadharno" class="form-control" [(ngModel)]="Aadharno">
+
+  </div>
+  <div class="clearfix"></div>
+<br>
+<input type="button" value="add"  (click)="onSubmit()"    class="btn btn-success"  style="background-color:green;color:white;" >
